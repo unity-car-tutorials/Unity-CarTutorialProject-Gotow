@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{A9A8518D-ECBD-121B-B6AE-49D1159E6B34}</ProjectGuid>
+	<ProjectGuid>{FEB75BAD-05B3-935B-976F-DC22382F22D4}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,20 +46,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Car Control\AICar_Script.js" />
-     <Compile Include="Assets\Scripts\Car Control\PlayerCar_Script.js" />
-     <Compile Include="Assets\Scripts\Car Control\WheelAlignment_Script.js" />
-     <Compile Include="Assets\Scripts\General\DrawWaypointGizmos_Script.js" />
-     <None Include="Assets\Artwork\Car\Shaders\ConstantColorUnderLayer_Shader.shader" />
+     <Compile Include="Assets\GotowTutorialJS\Scripts\Car Control\AICar_Script.js" />
+     <Compile Include="Assets\GotowTutorialJS\Scripts\Car Control\PlayerCar_Script.js" />
+     <Compile Include="Assets\GotowTutorialJS\Scripts\Car Control\WheelAlignment_Script.js" />
+     <Compile Include="Assets\GotowTutorialJS\Scripts\General\DrawWaypointGizmos_Script.js" />
+     <Compile Include="Assets\GotowTutorialJS\Standard Assets\Camera Scripts\MouseOrbit.js" />
+     <Compile Include="Assets\GotowTutorialJS\Standard Assets\Camera Scripts\SmoothFollow.js" />
+     <Compile Include="Assets\GotowTutorialJS\Standard Assets\Camera Scripts\SmoothLookAt.js" />
+     <None Include="Assets\GotowTutorialJS\Artwork\Car\Shaders\ConstantColorUnderLayer_Shader.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{806E9689-B985-F390-D00D-5568FA5EA480}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{95F711AE-203D-9FF9-B457-E216C034380A}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

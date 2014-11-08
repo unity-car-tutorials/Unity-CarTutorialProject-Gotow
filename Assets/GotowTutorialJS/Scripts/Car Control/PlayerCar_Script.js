@@ -65,10 +65,10 @@ function Update () {
 function ShiftGears() {
 	// this funciton shifts the gears of the vehcile, it loops through all the gears, checking which will make
 	// the engine RPM fall within the desired range. The gear is then set to this "appropriate" value.
-	if ( EngineRPM >= MaxEngineRPM ) {
-		var AppropriateGear : int = CurrentGear;
-		
-		for ( var i = 0; i < GearRatio.length; i ++ ) {
+	
+	var AppropriateGear : int = CurrentGear;
+	if ( EngineRPM >= MaxEngineRPM ) {		
+		for ( var i : int = 0; i < GearRatio.length; i ++ ) {
 			if ( FrontLeftWheel.rpm * GearRatio[i] < MaxEngineRPM ) {
 				AppropriateGear = i;
 				break;
@@ -81,7 +81,7 @@ function ShiftGears() {
 	if ( EngineRPM <= MinEngineRPM ) {
 		AppropriateGear = CurrentGear;
 		
-		for ( var j = GearRatio.length-1; j >= 0; j -- ) {
+		for ( var j : int = GearRatio.length-1; j >= 0; j -- ) {
 			if ( FrontLeftWheel.rpm * GearRatio[j] > MinEngineRPM ) {
 				AppropriateGear = j;
 				break;
